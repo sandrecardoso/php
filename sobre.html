@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Sobre</title>
+<meta charset="utf-8">
+<style>
+h1{
+position:absolute;
+top:50;
+left:500;
+
+
+}
+p{
+position:absolute;
+top:100;
+left:500;
+}
+.menu{
+list-style:none; 
+border:2px solid black; 
+float:left; 
+}
+.menu li{
+position:relative; 
+float:left; 
+border-right:1px solid #c0c0c0; 
+}
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:black; 
+color:yellow; 
+-moz-box-shadow:0 3px 10px 0 #CCC; 
+-webkit-box-shadow:0 3px 10px 0 #ccc; 
+text-shadow:0px 0px 5px #fff; 
+}
+/*submenu*/
+.menu li  ul{
+position:absolute; 
+top:25px; 
+left:0;
+background-color:white; 
+display:none;
+border-radius:5px red;
+}
+.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li ul li{
+border:1px solid #c0c0c0; 
+display:block; 
+width:150px;
+}
+</style>
+</head>
+<body >
+<h1>Nossos serviços</h1>
+<p>Essa página é sobre desenvolvimento web!!!</p>
+<ul class="menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="sobre.html" >Sobre</a></li>
+	  		<li><a href="#">Meus canais</a>
+	         	<ul>
+	                  <li><a href="http://sandrecardoso.blogspot.com" target="_blank">Meu Blog</a></li>
+	                  <li><a href="https://www.youtube.com/channel/UC3hBjGCM7N6Q1jxS883DzhA?view_as=subscriber" target="_blank">Meu Youtube</a></li>
+	                  <li><a href="http://sandrecardoso.caster.fm" target="_blank">Minha Webrádio</a></li>                    
+	       		</ul>
+			</li>
+		<li><a href="#">Links</a>
+		        <ul>
+	                  <li><a href="#">Web Design</a></li>
+	                  <li><a href="#">SEO</a></li>
+	                  <li><a href="#">Design</a></li>                    
+	       		</ul>
+			</li>
+		<li><a href="mailto:habitsul@gmail.com">Contato</a></li>                
+</ul>
+</body>
+</html>
